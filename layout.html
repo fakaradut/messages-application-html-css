@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  
+<div class="grid-layout" id="grid-layout">
+  <!-- MEDIA MENU -->
+  <section class="media-nav" id="media-nav">
+    <ul><li class="image-menu"><a href=""><img  src="./assets/images/menu-icon.fw.png" alt=""></a></li>
+    <span class="media-icons">
+        <li><a href=""><img src="./assets/images/social-media-icons/whatsapp.fw.png" alt=""></a></li>
+        <li><a href=""><img src="./assets/images/social-media-icons/messenger.fw.png" alt=""></a></li>
+        <li><a href=""><img src="./assets/images/social-media-icons/phone.fw.png" alt=""></a></li>
+        <li><a href=""><img src="./assets/images/social-media-icons/skype.fw.png" alt=""></a></li>
+        <li><a href=""><img src="./assets/images/social-media-icons/N.fw.png" alt=""></a></li></span>
+     </ul> 
+ </section>
+  <!-- INBOX MENU -->
+  <section class="inbox-nav" id="inbox-nav">
+      <div class="inbox-title"><span class="inbox-text">Inbox</span> <a class="add-contact-button" href="">
+          <img src="./assets/images/add-contact-icon.fw.png" alt=""></a></div>
+      <ul>
+          <li class="links"> <div class="inbox-component-number" [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">All Messages</span><span class="component-number">12</span></div></li>
+          <li class="links"> <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Unread</span><span class="component-number">12</span></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Important</span><span class="component-number">12</span></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Drafts</span><span class="component-number">12</span></div></li>
+          <li> <div class="separator"></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Teams</span><span class="component-number">12</span></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Groups</span><span class="component-number">12</span></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Channels</span><span class="component-number">12</span></div></li>
+          <li class="links"> <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Locations</span><span class="component-number">12</span></div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >
+            <span class="component-title">Media</span><span class="component-number">12</span></div></li>
+          <li> <div class="separator" ></div></li>
+          <li class="links"> <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Help</div></li>
+          <li class="links">  <div class="inbox-component-number"  [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Settings</div></li>
+      </ul>
+  </section>
+  <!--CONTACT MENU-->
+  <section class="contact-nav" id="contact-nav">
+    <header class="contact-nav-header-area">
+      <div class="search-contact-bar"><input class="input" name="searh-contact" type="text" placeholder="Search"></div>
+      <div class="separator-contact-nav"></div></header>
+    <div class="contact-list">
+      <ul > 
+        <!--CONTACT SAMPLE-->
+        <li class="contact"><div class="contact-item">
+          <span class="contact-status-picture">
+            <!--contact online image-->
+            <img class="online" src="./assets/images/online.fw.png" alt="">
+            <!--contact picture-->
+            <img src="./assets/images/contact-icon.fw.png" alt=""></span>
+          <span class="contact-message-info">
+            <div class="first-line"> 
+            <!--contact name-->
+            <span class="contact-name">Kristen McKellar</span>
+            <!--person's contact  option-->
+            <a href=""><img class="contact-option-button" src="./assets/images/contact-option.fw.png" alt=""></div></a>          
+            <div class="second-line"><!--contact last send message-->
+            <span class="contact-last-message">Where is the nearest place to go to the fishing. I am so bored. </span>
+            <!--contact last message time-->
+          <span class="contact-last-message-time">10 min</span></div></span> </div>
+        </li> 
+        <li><div class="separator-contact"></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="display-area" id="display-area">
+    <div class="grid">
+    <header class="header-part">
+      <span class="title-area"><span class="message-contant part"><b>Kyler McKellar</b> is typing</span></span>
+      <span class="option-area"><span class="vertical-separator"></span>
+      <img class="part" src="./assets/images/star.fw.png" alt="">
+      <span class="vertical-separator"></span>
+      <img class="part" src="./assets/images/phone.fw.png" alt="">
+      <span class="vertical-separator"></span>
+      <img class="part" src="./assets/images/camera.fw.png" alt=""></span>
+   </header>   
+   
+    <main class="message-area">
+      <ul>
+        <li class="message-order"> 
+          <div class="send-message-box message-box">
+          <div class="message-content"><div class="message-text">Hello. How are you?</div><img class="message-box-part" src="./assets/images/message-box-send-part.fw.png" alt=""></div>
+          <div class="message-info"><img class="person-pic" src="./assets/images/person-message-icon-2.fw.png" alt=""><span class="message-time">19:20</span></div>
+        </div></li>
+        <li class="message-order">
+          <div class="incoming-message-box message-box">
+          <div class="message-info"><img class="person-pic" src="./assets/images/person-message-icon-1.fw.png" alt=""><span class="message-time">20:00</span></div>
+          <div class="message-content"><img class="message-box-part" src="./assets/images/message-box-incoming-part.fw.png" alt=""><div class="message-text">
+           Fine. How r u?.</div></div>
+        </div></li>
+        <li class="message-order"> 
+          <div class="send-message-box message-box">
+          <div class="message-content"><div class="message-text">I am ok, thank you. What is going on?</div><img class="message-box-part" src="./assets/images/message-box-send-part.fw.png" alt=""></div>
+          <div class="message-info"><img class="person-pic" src="./assets/images/person-message-icon-2.fw.png" alt=""><span class="message-time">19:20</span></div>
+        </div></li>
+        <li class="message-order">
+          <div class="incoming-message-box message-box">
+          <div class="message-info"><img class="person-pic" src="./assets/images/person-message-icon-1.fw.png" alt=""><span class="message-time">20:00</span></div>
+          <div class="message-content"><img class="message-box-part" src="./assets/images/message-box-incoming-part.fw.png" alt=""><div class="message-text">
+            Where is the nearest place to go to the fishing. I am so bored</div></div>
+        </div></li>
+        
+      </ul>
+    </main>
+   
+    <footer class="bottom-part">
+      <span class="message-send"><input type="text" id="message-input-area" placeholder="Type your message"></span>
+      <span class="send-button">
+      </span>
+    </footer>
+    </div>
+  </section>
+    
+  <section class="info-area" id="info-area">
+    <!--Person info top area-->
+     <div class="top">
+        <span class="top-left">
+        <span class="online"><img src="./assets/images/contact-info-online.fw.png" alt=""></span>
+        <span class="bell"><img src="./assets/images/contact-info-bell.fw.png" alt=""></span></span>
+        <span class="top-right">
+        <span class="contact-name">Matt Thompson</span>
+        <span class="contact-info"><a href=""><img src="./assets/images/contact-icon-info.fw.png" alt=""></a></span></span></div>
+      <!--Person info middle area-->
+      <div class="person-body">
+        <div class="person-body-head">
+          <span class="person-media-image"><a href=""><img src="./assets/images/contact-icon-messenger.fw.png" alt=""></a></span>
+          <span class="person-setting"><a href=""><img src="./assets/images/contact-icon-setting.fw.png" alt=""></a></span></div>
+        <div class="person-picture"><img src="./assets/images/contact-picture.fw.png" alt=""></div>
+        <div class="person-name"><p><b>Kristen McKellar</b></p></div>
+        <div class="person-location"><p>Cape Town, RSA</p></div>
+      </div>
+      <!--Person info bottom area-->
+      <div class="person-info">
+        <ul>
+          <li class="person-nickname"><span>Nickname:</span><span>Killa Kella</span></li>
+          <li class="person-phone"><span>Tel:</span><span>072 143 9920</span></li>
+          <li class="person-birth-date"><span>Date Of Birth:</span><span>July 12, 1988</span></li>
+          <li class="person-gender"><span>Gender:</span><span>Female</span></li>
+          <li class="person-language"><span>Language:</span><span>English</span></li>
+        </ul>
+      </div>
+  </section>
+
+ </div>
+</body>
+</html>
